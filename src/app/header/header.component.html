@@ -1,0 +1,11 @@
+
+    
+    <!-- <h1>{{title | slice:0:7}}</h1> -->
+    <nav>
+        <img class="image" src="assets/angularImage.png">
+        <label class="logo">Angular</label>
+        <ul>   
+        <a class="active" href="#" routerLinkActive="active">Home</a>
+        <a routerLink={{element}} routerLinkActive="active" *ngFor="let element of navItems">{{element | uppercase}}</a>
+    </ul>
+    </nav>

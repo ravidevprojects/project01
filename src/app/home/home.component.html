@@ -1,0 +1,8 @@
+<h1 class="title">Angular Versions</h1>
+<div class="card" *ngFor="let element of resultData">
+  <div class="container">
+  <p>Package: {{element.package.name}}</p>
+  <p>Version: {{element.package.version}}</p>
+  <p>Date Released: {{element.package.date | date}}</p>
+</div>
+</div>

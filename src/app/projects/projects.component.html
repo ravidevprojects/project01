@@ -1,0 +1,9 @@
+<div class= "content">
+<button class="button" (click)="getData();">Get the Photos with id</button>
+<div>
+<div class="id" *ngFor="let element of resultData">
+<p >{{element.id}}</p>
+<img class="avatar" src={{element.owner.avatar_url}}/>
+</div>
+</div>
+</div>
